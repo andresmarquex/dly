@@ -1,0 +1,12 @@
+{
+  "name": "vercel-yt-dlp-proxy",
+  "version": "1.0.0",
+  "description": "Vercel serverless proxy for yt-dlp YouTube downloads",
+  "main": "api/download/index.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "yt-dlp-wrap": "^2.3.12"
+  }
+}
