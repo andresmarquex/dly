@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YT Ultra Downloader",
+  "version": "1.2",
+  "description": "Añade un botón de descarga que conecta con tu backend local",
+  "permissions": ["activeTab"],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch?v=*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
